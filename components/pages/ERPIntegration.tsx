@@ -1,0 +1,277 @@
+import React, { useEffect } from 'react';
+import { 
+  Network, RefreshCw, Database, CheckCircle2, FileJson, 
+  Server, ShieldCheck, Activity, ArrowRightLeft, 
+  Factory, Truck, Building2, Layers, ArrowDown, Pill, Car, 
+} from 'lucide-react';
+import { Button } from '../Button';
+
+interface ERPIntegrationProps {
+  onOpenDemo: () => void;
+  onContact: () => void;
+}
+
+export const ERPIntegration: React.FC<ERPIntegrationProps> = ({ onOpenDemo, onContact }) => {
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <div className="bg-white min-h-screen">
+      
+      {/* Hero Section */}
+      <section className="relative bg-white pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        {/* Technical Grid Background */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-40 pointer-events-none"></div>
+        
+        {/* Ambient Glow */}
+        <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-50/50 skew-x-12 translate-x-20 pointer-events-none blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-red-50/50 rounded-full blur-[100px] -translate-x-1/2 translate-y-1/2 pointer-events-none"></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 shadow-sm mb-8">
+              <span className="relative flex h-2 w-2">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-movilance-red opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-movilance-red"></span>
+              </span>
+              <span className="text-xs font-semibold text-slate-600 uppercase tracking-widest">System Connectivity</span>
+            </div>
+            
+            <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 leading-tight tracking-tight mb-8 max-w-4xl mx-auto">
+              Connect Gate Operations <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-movilance-red via-red-500 to-orange-400">
+                Directly with Your ERP.
+              </span>
+            </h1>
+            
+            <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">
+              Enable seamless, bi-directional data flow between gate-level operations and enterprise systems for accurate, real-time business visibility.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" onClick={onOpenDemo}>Book a Demo</Button>
+              <Button size="lg" variant="secondary" onClick={onContact}>Talk to Our Team</Button>
+            </div>
+        </div>
+      </section>
+
+      {/* The Challenge & Solution */}
+      <section className="py-24 bg-slate-50 relative overflow-hidden">
+        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-start">
+            
+            {/* The Challenge */}
+            <div className="bg-white rounded-3xl p-8 lg:p-10 border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-xl transition-all duration-300">
+              <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#64748b_1px,transparent_1px)] [background-size:16px_16px]"></div>
+              
+              <div className="relative z-10">
+                <h2 className="text-2xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                  <div className="bg-red-50 p-2 rounded-lg text-red-500 border border-red-100"><Layers className="w-6 h-6" /></div>
+                  The Challenge
+                </h2>
+                <p className="text-slate-600 mb-6">
+                  When gate operations and ERP systems work in silos, organizations face:
+                </p>
+                <ul className="space-y-4">
+                  {[
+                    "Duplicate data entry across systems causing delays",
+                    "Delayed updates of PO, GRN, and dispatch data",
+                    "Manual reconciliation efforts by finance and stores",
+                    "Data mismatches between physical and system records"
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-start gap-3 text-slate-700 group/item">
+                      <span className="mt-2 w-1.5 h-1.5 rounded-full bg-red-400 group-hover/item:scale-150 transition-transform flex-shrink-0"></span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* The Solution */}
+            <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-2xl shadow-red-900/5 relative overflow-hidden border-2 border-movilance-red group">
+               <div className="absolute inset-0 opacity-[0.03] bg-[linear-gradient(45deg,#dc2626_25%,transparent_25%,transparent_75%,#dc2626_75%,#dc2626),linear-gradient(45deg,#dc2626_25%,transparent_25%,transparent_75%,#dc2626_75%,#dc2626)] [background-size:20px_20px] [background-position:0_0,10px_10px]"></div>
+               
+               <div className="relative z-10">
+                 <h2 className="text-2xl font-bold text-movilance-navy mb-6 flex items-center gap-3">
+                    <div className="bg-movilance-red p-2 rounded-lg text-white shadow-lg"><Network className="w-6 h-6" /></div>
+                    The Movilance Solution
+                 </h2>
+                 <p className="text-lg text-slate-600 leading-relaxed mb-6">
+                   Movilance ERP Integration connects gate-level activities directly with enterprise ERP systems, ensuring that physical movements and business transactions remain synchronized at all times.
+                 </p>
+                 <div className="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                   <p className="text-slate-700 font-medium italic border-l-4 border-movilance-red pl-4">
+                     "Our GRN process is now automated, cutting down material inward processing time by 75%."
+                   </p>
+                 </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      {/* Key Capabilities */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <span className="text-movilance-red font-bold tracking-widest uppercase text-xs bg-red-50 px-3 py-1 rounded-full border border-red-100">Features</span>
+            <h2 className="text-3xl font-bold text-movilance-navy mt-4 mb-4">Key Capabilities</h2>
+            <p className="text-slate-600 text-lg">Seamless data flow for true operational visibility.</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                icon: ArrowRightLeft,
+                title: "Bi-Directional Sync",
+                features: ["Sync POs, Challans, & Invoices", "Real-time updates to ERP", "Eliminate double entry"]
+              },
+              {
+                icon: Server,
+                title: "ERP Compatibility",
+                features: ["SAP, Oracle, Microsoft Dynamics", "Custom ERP support", "Secure API framework"]
+              },
+              {
+                icon: CheckCircle2,
+                title: "Data Validation",
+                features: ["Match physical movement to system", "Prevent incorrect transactions", "Validation rules engine"]
+              },
+              {
+                icon: FileJson,
+                title: "Exception Logs",
+                features: ["Track failed syncs", "Detailed error logs", "Retry mechanisms"]
+              },
+              {
+                icon: Database,
+                title: "Master Data Management",
+                features: ["Sync vendors & material codes", "Unified employee database", "Consistent master records"]
+              },
+              {
+                icon: ShieldCheck,
+                title: "Secure & Scalable",
+                features: ["Encrypted data transfer", "High-volume throughput", "Role-based API access"]
+              }
+            ].map((cap, idx) => (
+              <div key={idx} className="group relative p-8 rounded-2xl border border-slate-100 bg-white hover:border-movilance-red/20 shadow-sm hover:shadow-xl hover:shadow-movilance-navy/5 transition-all duration-300 flex flex-col">
+                <div className="w-14 h-14 bg-slate-50 rounded-xl flex items-center justify-center mb-6 group-hover:bg-movilance-red group-hover:text-white transition-all duration-300 border border-slate-100 group-hover:border-movilance-red">
+                  <cap.icon className="w-7 h-7 text-slate-600 group-hover:text-white transition-colors" />
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-4 group-hover:text-movilance-navy transition-colors">{cap.title}</h3>
+                <ul className="space-y-3 mt-auto">
+                  {cap.features.map((f, i) => (
+                    <li key={i} className="text-sm text-slate-600 flex items-start gap-2.5">
+                      <div className="mt-1.5 w-1 h-1 rounded-full bg-movilance-red/50"></div>
+                      {f}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works */}
+      <section className="py-24 bg-slate-50 relative overflow-hidden">
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:2rem_2rem] opacity-30 z-0"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-20">
+             <h2 className="text-3xl md:text-4xl font-bold text-movilance-navy tracking-tight">How It Works</h2>
+             <p className="text-slate-600 mt-4 text-lg">Bridging the gap between physical and digital.</p>
+          </div>
+          
+          <div className="grid md:grid-cols-4 gap-8 relative">
+             {/* Connector Line (Desktop) */}
+             <div className="hidden md:block absolute top-12 left-[12%] right-[12%] h-0.5 bg-gradient-to-r from-slate-200 via-movilance-red/30 to-slate-200 z-0"></div>
+
+             {[
+               { step: "01", title: "Sync", desc: "Master data pulled from ERP to Movilance." },
+               { step: "02", title: "Transact", desc: "Material/Vehicle entry recorded at gate." },
+               { step: "03", title: "Update", desc: "Transaction pushed back to ERP instantly." },
+               { step: "04", title: "Verify", desc: "Finance reviews synced record effortlessly." }
+             ].map((item, idx) => (
+               <div key={idx} className="relative z-10 flex flex-col items-center text-center group">
+                  <div className="w-24 h-24 rounded-full bg-white border-4 border-slate-100 flex items-center justify-center mb-6 shadow-lg relative transition-transform duration-500 group-hover:scale-105 group-hover:border-movilance-red/20">
+                     <span className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-movilance-red to-orange-500">{item.step}</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-movilance-red transition-colors">{item.title}</h3>
+                  <p className="text-sm text-slate-500 leading-relaxed px-2">{item.desc}</p>
+                  
+                  {idx !== 3 && (
+                    <div className="md:hidden my-6">
+                      <ArrowDown className="w-5 h-5 text-slate-300" />
+                    </div>
+                  )}
+               </div>
+             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Benefits */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-2 gap-16">
+            <div>
+              <h3 className="text-2xl font-bold text-movilance-navy mb-8 border-l-4 border-movilance-red pl-4">Operational Benefits</h3>
+              <div className="space-y-6">
+                {[
+                  "Accelerated gate and store operations",
+                  "Total elimination of manual data re-entry",
+                  "Significantly reduced reconciliation effort"
+                ].map((b, i) => (
+                   <div key={i} className="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+                     <div className="bg-white rounded-full p-1 h-fit text-emerald-600 shadow-sm border border-emerald-100"><Activity className="w-5 h-5" /></div>
+                     <span className="text-slate-700 font-medium">{b}</span>
+                   </div>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-movilance-navy mb-8 border-l-4 border-movilance-red pl-4">Business & Financial</h3>
+              <div className="space-y-6">
+                {[
+                  "Improved data accuracy across all systems",
+                  "Real-time visibility into inventory and flow",
+                  "Stronger financial control and compliance"
+                ].map((b, i) => (
+                   <div key={i} className="flex gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
+                     <div className="bg-white rounded-full p-1 h-fit text-movilance-red shadow-sm border border-red-100"><ShieldCheck className="w-5 h-5" /></div>
+                     <span className="text-slate-700 font-medium">{b}</span>
+                   </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Industries */}
+      <section className="py-20 bg-slate-50 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+           <h2 className="text-2xl font-bold text-movilance-navy mb-10">Ideal For</h2>
+           
+           <div className="flex flex-wrap justify-center gap-4">
+              {[
+                { icon: Factory, label: "Manufacturing" },
+                { icon: Truck, label: "Logistics" },
+                { icon: Car, label: "Automotive" },
+                { icon: Pill, label: "Pharma" },
+                { icon: Building2, label: "Large Enterprises" },
+              ].map((ind, idx) => (
+                 <div key={idx} className="flex items-center gap-3 px-8 py-4 bg-white rounded-2xl border border-slate-200 text-slate-700 font-semibold shadow-sm hover:shadow-md hover:border-movilance-red/30 transition-all duration-300 group">
+                    <ind.icon className="w-5 h-5 text-slate-400 group-hover:text-movilance-red transition-colors" />
+                    {ind.label}
+                 </div>
+              ))}
+           </div>
+        </div>
+      </section>
+
+    </div>
+  );
+};

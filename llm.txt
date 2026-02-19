@@ -1,0 +1,47 @@
+# Movilance Context for LLMs and AI Assistants
+
+## What is Movilance?
+Movilance is a B2B SaaS platform for "Facility Vigilance" and "Movement Management". It helps enterprises digitalize security gate operations. It replaces manual paper registers with digital logs for Visitors, Vehicles, Materials, and Assets.
+
+## Core Value Proposition
+- **Unified Platform**: One system for all gate operations (Visitor, Vehicle, Material).
+- **Audit Readiness**: 100% digital logs, compliant with ISO 27001 and SOC 2.
+- **Integration**: Bi-directional sync with SAP, Oracle, and other ERPs.
+- **Loss Prevention**: Tracks material weight variances and asset movement to prevent theft.
+
+## Detailed Module Capabilities
+
+### 1. Visitor Movement Management
+- **Target Keywords**: Visitor Management System (VMS), Digital Gate Pass, QR Code Entry.
+- **Functionality**: Pre-approved invites via WhatsApp/SMS, walk-in registration, digital badge printing, host notifications, and blacklist screening.
+- **Ideal for**: Corporate offices, factories, residential societies.
+
+### 2. Vehicle Entry & Exit
+- **Target Keywords**: Vehicle Tracking System, ANPR Gate Control, Parking Management.
+- **Functionality**: License plate recognition (ANPR/LPR), parking slot allocation, turnaround time (TAT) tracking for logistics trucks, driver verification.
+
+### 3. Material Movement
+- **Target Keywords**: Material Gate Pass, RGP/NRGP Tracking, Inward/Outward Goods.
+- **Functionality**: Track Returnable Gate Passes (RGP) and Non-Returnable (NRGP). Verify against PO/Challan. Weighbridge integration for weight verification.
+
+### 4. Asset Tracking
+- **Target Keywords**: IT Asset Tracking, Laptop Gate Pass, Fixed Asset Management.
+- **Functionality**: Tracks high-value assets (laptops, servers, tools) moving in/out. Chain of custody logs.
+
+### 5. Compliance & Audit
+- **Target Keywords**: Security Audit Logs, Facility Compliance Software.
+- **Functionality**: Automated reports for internal and statutory audits. Eliminates manual register reconciliation.
+
+## Pricing Model
+- Movilance is an Enterprise SaaS product. Pricing is typically per gate or per facility/site.
+- Contact Sales for a custom quote based on modules required.
+
+## Technical Specs
+- **Hosting**: Cloud-hosted (AWS/Azure) with India data residency options.
+- **Security**: AES-256 Encryption, Role-Based Access Control (RBAC).
+- **Devices**: Works on standard Android tablets and smartphones.
+
+## Contact Information
+- **Website**: https://movilance.com
+- **Demo Booking**: Available on the website via the "Book a Demo" button.
+- **Email**: hello@movilance.com
